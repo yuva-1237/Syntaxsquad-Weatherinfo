@@ -1,0 +1,98 @@
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #222;
+      font-family: 'Open Sans', sans-serif;
+      background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80");
+      background-size: cover;
+      background-position: center;
+      font-size: 120%;
+      backdrop-filter: blur(8px);
+    }
+
+    .card {
+      background: #000000d0;
+      color: whitesmoke;
+      padding: 2em;
+      border-radius: 30px;
+      max-width: 420px;
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .card:hover {
+        transform: scale(1.06);
+        box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
+      }
+
+    .search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1em;
+    }
+
+    input.searchbar {
+      border: none;
+      outline: none;
+      padding: 0.6em 1em;
+      border-radius: 24px;
+      background: #7c7c7c2b;
+      color: whitesmoke;
+      font-size: 105%;
+      width: calc(100% - 80px);
+      transition: all 0.3s ease;
+    }
+
+    input.searchbar:hover,
+    input.searchbar:focus {
+      background: #ffffff3b;
+      transform: scale(1.05);
+    }
+
+    button {
+      border: none;
+      border-radius: 50%;
+      height: 45px;
+      width: 45px;
+      margin-left: 10px;
+      background: #7c7c7c2b;
+      color: whitesmoke;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background: white;
+      color: black;
+      transform: scale(1.1);
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      margin: 0.5em 0;
+    }
+
+    .description {
+      text-transform: capitalize;
+      margin-left: 8px;
+    }
+
+    .weather.loading {
+      visibility: hidden;
+      max-height: 20px;
+      position: relative;
+    }
+
+    .weather.loading::after {
+      visibility: visible;
+      content: "Loading...";
+      color: white;
+      position: absolute;
+      top: 0;
+      left: 20px;
+    }
